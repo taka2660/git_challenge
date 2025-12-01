@@ -74,3 +74,8 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/taka2660/git_challenge.git
    44957a8..09c2433  main -> main
 PS C:\git_challenge> 
+PS C:\git_challenge> git log --oneline
+60d6cf7 (HEAD -> main, origin/main) 再コミット1回目
+09c2433 再コミット2回目
+44957a8 再コミット1回目
+PS C:\git_challenge> 
