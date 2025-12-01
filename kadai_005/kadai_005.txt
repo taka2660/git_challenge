@@ -1,0 +1,42 @@
+PS C:\git_challenge> dir
+
+
+    ディレクトリ: C:\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2025/12/02      8:37             13 hello_world.txt
+
+
+PS C:\git_challenge> git add hello_world.txt
+PS C:\git_challenge> git commit -m "Commit 1"
+[main 36cb0c1] Commit 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\git_challenge> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Writing objects: 100% (3/3), 257 bytes | 257.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/taka2660/git_challenge.git
+   c2cf693..36cb0c1  main -> main
+PS C:\git_challenge> git push
+Everything up-to-date
+PS C:\git_challenge> #hellow_world.txtにHello, world! 2を追記
+PS C:\git_challenge> git add hello_world.txt
+PS C:\git_challenge> git commit -m "Commit 2"
+[main ecd7774] Commit 2
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+PS C:\git_challenge> git log --oneline
+ecd7774 (HEAD -> main) Commit 2
+36cb0c1 (origin/main) Commit 1
+PS C:\git_challenge> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 266 bytes | 266.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/taka2660/git_challenge.git
+   36cb0c1..ecd7774  main -> main
+PS C:\git_challenge> 
