@@ -1,0 +1,76 @@
+PS C:\git_challenge> dir
+
+
+    ディレクトリ: C:\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2025/12/01     13:33             17 hello_world.txt
+
+
+PS C:\git_challenge> cat hello_world.txt
+Hello, world!
+
+
+PS C:\git_challenge> git add hello_world.txt
+PS C:\git_challenge> git commit -m "再コミット1回目"
+[main (root-commit) 44957a8] 再コミット1回目
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\git_challenge> git log 
+commit 44957a8f6ca26e1ec55438cf6cdaf00fe1aa2561 (HEAD -> main)
+Author: taka2660 <takahisa.ota@hotmail.com>
+Date:   Mon Dec 1 13:34:25 2025 +0900
+
+    再コミット1回目
+PS C:\git_challenge> 
+PS C:\git_challenge> git remote add origin https://github.com/taka2660/git_challenge.git
+PS C:\git_challenge> git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 259 bytes | 259.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/taka2660/git_challenge.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\git_challenge> 
+PS C:\git_challenge> dir
+
+
+    ディレクトリ: C:\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2025/12/01     13:37             43 hello_world.txt
+
+
+PS C:\git_challenge> cat hello_world.txt
+Hello, world!
+縺薙ｓ縺ｫ縺｡縺ｯ縲∽ｸ也阜・・
+
+PS C:\git_challenge> git add hello_world.txt
+PS C:\git_challenge> git commit -m "再コミット2回目"
+[main 09c2433] 再コミット2回目
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\git_challenge> git log
+commit 09c243310b8b61cb5f223d96c940c775118c2cba (HEAD -> main)
+Author: taka2660 <takahisa.ota@hotmail.com>
+Date:   Mon Dec 1 13:39:40 2025 +0900
+
+    再コミット2回目
+
+commit 44957a8f6ca26e1ec55438cf6cdaf00fe1aa2561 (origin/main)
+Author: taka2660 <takahisa.ota@hotmail.com>
+Date:   Mon Dec 1 13:34:25 2025 +0900
+
+    再コミット1回目
+PS C:\git_challenge> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/taka2660/git_challenge.git
+   44957a8..09c2433  main -> main
+PS C:\git_challenge> 
